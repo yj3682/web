@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+		<link rel="icon" href="https://cdn2.iconfinder.com/data/icons/seo-and-marketing-18/50/50-512.png" type="image/ico">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/49af95bca6.js" crossorigin="anonymous"></script>
+		<title>迪士尼介紹</title>
+		<style>
+	body{
+		font-family: 'Noto Sans JP';
+		}
+	.navbar{
+		padding-left: 5%;
+		padding-right: 5%;
+		}
+	.navbar img{
+		width: 80%;
+		}
+	.navbar-nav{
+		margin: auto;
+		}
+	.jumbotron{
+        font-size: xx-large;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		color: rgba(255, 255, 255, 0.8);
+		text-align: center;
+		background-image: url('https://www.marketersgo.com/wp-content/uploads/2019/12/pan-xiaozhen-wXG5XF73o3w-unsplash-1024x536.jpg');
+		background-position: center;
+		background-size: cover;
+		}
+	.jum{
+        font-size:large;
+		padding-top:2rem;
+		padding-bottom: 2rem;
+		color: rgba(202, 127, 127, 0.8);
+		text-align: center;
+		background-color: antiquewhite;
+		background-position: center;
+		background-size: cover;
+		}
+	.jumbotron hr{
+		margin: 5%;
+		height:1rem;
+		color: rgba(255, 255, 255, 1);
+		}
+	.in{
+		color: rgb(204, 121, 13);
+		
+		}
+	.fa{
+		color: rgb(204, 121, 13);
+		
+		}
+	.yu{
+		color: rgb(204, 121, 13);
+		}
+	.ch{
+		color: rgb(219, 203, 112);
+		float: left;
+		}
+	.teacher{
+		padding-left: 5%;
+		padding-right: 5%;
+		}
+	.teacher .col-12{
+		margin-top: 5%;
+		margin-bottom: 5%;
+		}
+	.card{
+		margin: auto;
+		}
+	.q{
+		color: #000000;
+		float:right;
+		}
+	.di{
+
+		width: 128px;  
+		box-shadow: 0 1px 3px rgba(0, 0, 0, .5);  
+		vertical-align: middle;  
+	}
+	.post img {
+		transition: all 0.5s ease 0s;
+	}
+
+/*判斷滑鼠的動作放大圖片還有增加透明度*/
+	.post img:hover {
+		-moz-transform: scale(1.05);
+		-ms-transform: scale(1.05);
+		-o-transform: scale(1.05);
+		-webkit-transform: scale(1.05);
+		transform: scale(1.05);
+		opacity: .5;
+	}
+			
+   #menu {
+    	width: 100%;
+    	margin: 0;
+    	padding: 0px 0 0 0;
+    	list-style: none;
+   		background-color:  rgb(248,249,251);
+    	background-image:  rgb(248,249,251);
+		font-size:xx-large;
+   
+	}
+
+	#menu li {
+    	float: left;
+    	padding: 0 0 10px 0;
+    	position: relative;
+	}
+
+	#menu a {
+   		float: left;
+    	height: 25px;
+    	padding: 0 25px;
+    	color: rgb(0, 0, 0);
+    	text-transform: uppercase;
+    	font: bold 12px/25px Arial, Helvetica;
+    	text-decoration: none;
+
+}
+
+	#menu li:hover > a {
+    	color: #000000;
+	}
+
+	*html #menu li a:hover { /* IE6 */
+ 	   color: #000000;
+	}
+
+	#menu li:hover > ul {
+ 	   display: block;
+	}
+
+/* Sub-menu */
+	#menu ul {
+    	list-style: none;
+    	margin: 0;
+    	padding: 0;
+    	display: none;
+    	position: absolute;
+    	top: 35px;
+    	left: 0;
+    	z-index: 99999;
+    	background-color: rgb(231, 236, 245);
+    	background-image: rgb(248,249,251);
+    	-moz-border-radius: 5px;
+    	border-radius: 5px;
+	}
+
+	#menu ul li {
+	    float: none;
+	    margin: 0;
+	    padding: 0;
+	    display:rgba(255, 255, 255, 0.8);
+	    box-shadow: 0 1px 0 rgb(248,249,251),
+                0 2px 0 rgb(248,249,251);
+	}
+
+	#menu ul li:last-child {
+	    box-shadow: none;
+	}
+
+	#menu ul a {
+	    padding: 10px;
+	    height: auto;
+	    line-height: 1;
+	    display: rgb(248,249,251);
+		white-space: nowrap;
+   		float: none;
+    	text-transform: none;
+	}
+
+	*html #menu ul a { /* IE6 */
+   		height: 10px;
+    	width: 150px;
+	}
+
+	*:first-child+html #menu ul a { /* IE7 */
+ 	   height: 10px;
+ 	   width: 150px;
+	}
+
+#menu ul a:hover {
+    background-color: #77ccf3;
+    background-image: linear-gradient( #436da7, #0186ba);
+}
+
+	#menu ul li:first-child a {
+  	  border-radius: 5px 5px 0 0;
+	}
+
+	#menu ul li:first-child a:after {
+	    content: '';
+	    position: absolute;
+	    left: 30px;
+	    top: -8px;
+	    width: 0;
+	    height: 0;
+	    border-left: 5px solid transparent;
+	    border-right: 5px solid transparent;
+  
+	}
+
+	#menu ul li:first-child a:hover:after {
+	    border-bottom-color: #04acec;
+	}
+
+	#menu ul li:last-child a {
+	    border-radius: 0 0 5px 5px;
+	}
+
+/* Clear floated elements */
+	#menu:after {
+    	visibility: hidden;
+    	display:rgba(255, 255, 255, 0.8);
+    	font-size: 0;
+    	content: " ";
+ 	   clear: both;
+	    height: 0;
+	}
+
+		</style>
+	</head>
+	<body>
+		<!-- Nav區塊 --->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+			  <a class="navbar-brand" href="#"><img src="data:image/png;base64,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" width="100" height="200"></a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul id="menu" class="navbar-nav me-auto mb-2 mb-lg-0">
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="index.html">首頁</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="https://zh.wikipedia.org/wiki/%E5%8D%8E%E7%89%B9%E8%BF%AA%E5%A3%AB%E5%B0%BC%E5%85%AC%E5%8F%B8" target="_blank">關於</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="p1.html">角色</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="mo.html">電影</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">活動</a>
+				  </li>
+				  <li class="dropdown">
+                      <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">關注我們</a>
+                      <ul>
+                        <li><a href="https://zh-tw.facebook.com/Disney" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/disney/" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCl3MRIpEjC4v2wWdsk2Mabw" target="_blank">YouTube</a></li>
+                    </ul>
+				  </li>
+				
+				<form class="d-flex">
+				  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+				  <button class="btn btn-outline-success" type="submit">Search</button>
+				</form>
+			  </div>
+			</div>
+		  </nav>
+
+		<!-- Jumbotron區塊 --->
+		<div class="jumbotron">
+			<h1 class="display-4"></h1>
+			<hr>
+			<p>全世界都在催促你長大只有迪士尼在守護我們的童年</p>
+			<!--<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>--->
+		  </div>
+		 
+		<!-- Card區塊 --->
+		
+		<div class="teacher container post">
+			<div class="row">
+				<div class="col-12 col-sm-6 col-md-3">
+					<div class="card">
+						<a href="https://zh.wikipedia.org/wiki/%E6%80%AA%E7%8D%B8%E5%A4%A7%E5%AD%B8" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/zh/a/ae/Monsters_university.jpg" class="card-img-top" alt="怪獸大學"  width="100px" height="250px"></a>
+						<div class="card-body">
+					  <p class="card-text">怪獸大學</p>
+					  <p class="card-text">Monsters, Inc.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-3">
+					<div class="card">
+						<a href="https://zh.wikipedia.org/wiki/%E5%86%B0%E9%9B%AA%E5%A5%87%E7%BC%98" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/zh/0/05/Frozen_%282013_film%29_poster.jpg" class="card-img-top" alt="冰雪奇緣"  width="100px" height="250px"></a>
+						<div class="card-body">
+					  <p class="card-text">冰雪奇緣</p>
+					  <p class="card-text">Frozen</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-3">
+					<div class="card">
+						<a href="https://zh.wikipedia.org/wiki/%E8%85%A6%E7%AD%8B%E6%80%A5%E8%BD%89%E5%BD%8E_(%E9%9B%BB%E5%BD%B1)" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/zh/0/0a/Inside_Out_%282015_film%29_poster.jpg" class="card-img-top" alt="腦筋急轉彎" width="100px" height="250px"></a>
+						<div class="card-body">
+					  <p class="card-text">腦筋急轉彎</p>
+					  <p class="card-text">Inside Out</p>
+						</div>
+					</div>
+				</div> 
+				<div class="col-12 col-sm-6 col-md-3">
+					<div class="card">
+						<a href="https://zh.wikipedia.org/wiki/%E8%88%87%E6%A3%AE%E6%9E%97%E5%85%B1%E8%88%9E" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/zh/3/38/The_Jungle_Book_2016_Poster.jpg" class="card-img-top" alt="與森林共舞"  width="100px" height="250px"></a>
+						<div class="card-body">
+					  <p class="card-text">與森林共舞</p>
+					  <p class="card-text">The Jungle Book</p>
+						</div>
+					</div>
+				</div>
+			   
+			<div class="col-12 col-sm-6 col-md-3">
+				<div class="card">
+					<a href="https://zh.wikipedia.org/wiki/%E5%8B%95%E7%89%A9%E6%96%B9%E5%9F%8E%E5%B8%82" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/zh/d/d6/Zootopia-poster1-600x889.jpg" class="card-img-top" alt="動物方程式" width="100px" height="250px"></a>
+					<div class="card-body">
+				  <p class="card-text">動物方程式</p>
+				  <p class="card-text">Zootopia</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-md-3">
+				<div class="card">
+					<a href="https://zh.wikipedia.org/wiki/%E5%B0%8B%E9%BE%8D%E5%82%B3%E8%AA%AA" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/zh/0/0e/Pete%27s_Dragon_2016_Poster.jpg" class="card-img-top" alt="尋龍傳說"  width="100px" height="250px"></a>
+					<div class="card-body">
+				  <p class="card-text">尋龍傳說</p>
+				  <p class="card-text">Pete's Dragon</p>
+					</div>
+				</div>
+			</div>
+            <div class="col-12 col-sm-6 col-md-3">
+				<div class="card">
+					<a href="https://zh.wikipedia.org/wiki/%E7%BE%8E%E5%A5%B3%E8%88%87%E9%87%8E%E7%8D%B8_(2017%E5%B9%B4%E9%9B%BB%E5%BD%B1)" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/zh/6/6b/Beauty_and_the_Beast_2017_Poster.jpg" class="card-img-top" alt="美女與野獸" width="100px" height="250px"></a>
+					<div class="card-body">
+				  <p class="card-text">美女與野獸</p>
+				  <p class="card-text">Beauty and the Beast</p>
+					</div>
+				</div>
+			</div>
+            
+			<div class="col-12 col-sm-6 col-md-3">
+				<div class="card">
+					<a href="https://zh.wikipedia.org/wiki/%E5%AF%BB%E6%A2%A6%E7%8E%AF%E6%B8%B8%E8%AE%B0" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/zh/a/a3/Coco_2017.jpg" class="card-img-top" alt="可可夜總會"  width="100px" height="250px"></a>
+					<div class="card-body">
+				  <p class="card-text">可可夜總會</p>
+				  <p class="card-text">Coco</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-md-3">
+				<div class="card">
+					<a href="https://zh.wikipedia.org/wiki/%E6%91%AF%E5%8F%8B%E7%B6%AD%E5%B0%BC" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/zh/d/df/Christopher_Robin_%28film%29.jpg" class="card-img-top" alt="摯友維尼"  width="100px" height="250px"></a>
+					<div class="card-body">
+				  <p class="card-text">摯友維尼</p>
+				  <p class="card-text">Christopher Robin</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-md-3">
+				<div class="card">
+					<a href="https://zh.wikipedia.org/wiki/%E5%86%B0%E9%9B%AA%E5%A5%87%E7%B7%A32" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/zh/4/4f/Frozen_2_poster.jpg" class="card-img-top" alt="冰雪奇緣2"  width="100px" height="250px"></a>
+					<div class="card-body">
+				  <p class="card-text">冰雪奇緣2</p>
+				  <p class="card-text">Frozen II</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-md-3">
+				<div class="card">
+					<a href="https://zh.wikipedia.org/wiki/%E9%9D%88%E9%AD%82%E5%A5%87%E9%81%87%E8%A8%98" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/zh/b/bf/Soul_2020_poster.jpg" class="card-img-top" alt="靈魂急轉彎" width="100px" height="250px"></a>
+					<div class="card-body">
+				  <p class="card-text">靈魂急轉彎</p>
+				  <p class="card-text">	Soul</p>
+					</div>
+				</div>
+			</div>
+            <div class="col-12 col-sm-6 col-md-3">
+				<div class="card">
+					<a href="https://zh.wikipedia.org/wiki/%E5%B0%8B%E9%BE%8D%E4%BD%BF%E8%80%85%EF%BC%9A%E6%8B%89%E9%9B%85" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/zh/a/ae/Raya_and_the_Last_Dragon_poster.jpg" class="card-img-top" alt="尋龍使者：拉雅" width="100px" height="250px"></a>
+					<div class="card-body">
+				  <p class="card-text">尋龍使者：拉雅</p>
+				  <p class="card-text">	Raya and the Last Dragon</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="jum navbar-nav me-auto mb-2 mb-lg-0">
+			<h1 class="display-4 "></h1>
+			<hr>
+			<p class="fa navbar-nav me-auto mb-2 mb-lg-0">聯絡我們：092947419721</p>
+			<p class="fa navbar-nav me-auto mb-2 mb-lg-0">地址:台北市dh區ejii路fr段101號</p>
+			<p class="fa navbar-nav me-auto mb-2 mb-lg-0">信箱：DisneyTaiwan@disney.com.tw</p>
+			<p><a  href="https://zh-tw.facebook.com/Disney" class="fa "><i class="fab fa-facebook-square"></i></a> <a href="https://www.instagram.com/disney/" class="in "><i class="fab fa-instagram"></i></a> <a href="https://www.youtube.com/channel/UCl3MRIpEjC4v2wWdsk2Mabw" class="yu"><i class="fab fa-youtube" ></i></a></p>
+			<!--<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>--->
+		  </div>
+	  </footer>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+	</body>
+</html>
